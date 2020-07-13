@@ -14,7 +14,8 @@ namespace Redmine.Model
         public DateTime RegisteredOn { get; set; }
         public DateTime LastActive { get; set; }
         public string PhoneNo { get; set; }
-        public IEnumerable<Issue> Issues { get; set; }
+        public IEnumerable<Issue> IssuesAssigned { get; set; }
+        public IEnumerable<Issue> IssuesReported { get; set; }
         public IEnumerable<Project> Projects { get; set; }
     }
 }
